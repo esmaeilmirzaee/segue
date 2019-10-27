@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
+  @IBOutlet weak var senderTextField: UITextField!
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
   }
 
+  @IBAction func sendButtonPressed(_ sender: UIButton) {
+    performSegue(withIdentifier: "secondViewController", sender: self)
+  }
+  
 
 }
 
