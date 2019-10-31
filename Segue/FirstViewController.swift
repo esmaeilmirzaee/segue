@@ -20,6 +20,12 @@ class FirstViewController: UIViewController {
     performSegue(withIdentifier: "secondViewController", sender: self)
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "secondViewController" {
+      let destinationViewController = segue.destination as! SecondUIViewController
+      destinationViewController.text = senderTextField.text
+    }
+  }
 
 }
 
