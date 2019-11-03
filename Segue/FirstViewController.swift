@@ -24,7 +24,7 @@ class FirstViewController: UIViewController, ResponseBack {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "SendTextToSecondController" {
       let secondViewController = segue.destination as! SecondUIViewController
-      view.backgroundColor = UIColor.black
+      view.backgroundColor = UIColor.purple
       secondViewController.recievedText = senderTextField.text!
       secondViewController.delegate = self
     }
