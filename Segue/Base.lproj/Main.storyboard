@@ -32,23 +32,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-az-bNc">
+                                <rect key="frame" x="139" y="147" width="137" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="label" destination="3Ej-az-bNc" id="Z4A-Mg-JgM"/>
                         <outlet property="senderTextField" destination="fmZ-k0-cTj" id="gDY-pl-QU4"/>
-                        <segue destination="UKY-q8-hp0" kind="show" identifier="secondViewController" id="eAN-Ht-Nrw"/>
+                        <segue destination="UKY-q8-hp0" kind="show" identifier="SendTextToSecondController" id="eAN-Ht-Nrw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="267" y="110"/>
+            <point key="canvasLocation" x="266.66666666666669" y="109.82142857142857"/>
         </scene>
         <!--SecondUI View Controller-->
         <scene sceneID="Hr8-Kr-HNb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yC7-q6-dT7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="UKY-q8-hp0" customClass="SecondUIViewController" customModule="Segue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="ayp-Ly-VCc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -71,15 +78,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puQ-K8-Fhh">
+                                <rect key="frame" x="147" y="182" width="120" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.64768863341968919" green="0.15329168217656605" blue="0.12195502951426243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="D07-ur-lXV"/>
                     </view>
                     <navigationItem key="navigationItem" id="DRx-SP-TDx"/>
                     <connections>
+                        <outlet property="label" destination="puQ-K8-Fhh" id="8sa-CI-Pir"/>
                         <outlet property="receiverTextField" destination="77B-yT-5wk" id="6mO-wi-1fT"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yC7-q6-dT7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="966.66666666666674" y="109.82142857142857"/>
         </scene>
